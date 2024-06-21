@@ -4,9 +4,12 @@ import "@/styles/globals.css";
 // import { Rock_Salt } from "next/font/google";
 import { Cedarville_Cursive } from "next/font/google";
 
+const envUrl = process.env.BASE_URL!;
 export const metadata = {
   title: "Level Up Fitness",
-  description: "",
+  description:
+    "For the dedicated gym rats and fitness enthusiasts come together to push their limits! Our gym combines CrossFit and heavy machinery workouts with comprehensive stretching exercises and athletic mobility training. With over 30 expert personal trainers, we provide personalized guidance to help you reach your fitness goals. Enjoy a strong sense of community at our gym bar, and experience top-notch facilities at any of our three convenient city locations.",
+
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 
   generator: "Level Up Gym ",
@@ -53,12 +56,52 @@ export const metadata = {
     "core strength exercises",
     "group training sessions",
     "urban fitness gym",
+    "best CrossFit gym near me",
+    "heavy machinery fitness training",
+    "effective stretching exercises for athletes",
+    "improve athletic mobility workouts",
+    "experienced personal trainers in city",
+    "community-focused fitness gym",
+    "multiple gym locations in city",
+    "CrossFit classes for all levels",
+    "strength training with heavy machinery",
+    "flexibility and stretching classes",
+    "functional fitness for everyday life",
+    "certified personal trainers near me",
+    "mobility exercises for athletes",
+    "supportive gym community",
+    "best group fitness classes in city",
+    "high-intensity CrossFit training",
+    "weightlifting and strength building",
+    "cardio and strength combined workouts",
+    "full-body workout routines",
+    "one-on-one personal training sessions",
+    "customized fitness programs",
+    "dynamic stretching for flexibility",
+    "sports performance enhancement training",
+    "gym with convenient city locations",
+    "athletic training for performance",
+    "community events at gym",
+    "fitness bar and social area",
+    "CrossFit for beginners and advanced",
+    "advanced strength and conditioning",
+    "comprehensive weight training programs",
+    "affordable gym membership plans",
+    "intense fitness bootcamps",
+    "high-intensity interval training (HIIT)",
+    "strength and conditioning classes",
+    "inclusive gym community",
+    "personalized fitness plans and coaching",
+    "mobility drills for athletes",
+    "core strength and stability exercises",
+    "motivating group training sessions",
+    "urban fitness gym with modern equipment",
   ],
   authors: [
     // { name: "ghosn" },
-    { name: "Tarek", url: "envUrl" },
+    { name: "Tarek", url: envUrl },
   ],
-  creator: "Diala Turk",
+  creator: "Tarek Ghosn",
   publisher: "Tarek Ghosn",
   formatDetection: {
     email: false,
@@ -68,7 +111,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
   },
-  metadataBase: new URL("envUrl"),
+  metadataBase: new URL(envUrl),
   alternates: {
     canonical: "/",
     languages: {
@@ -78,13 +121,11 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Career and University Counseling Services in Lebanon & Middle East",
-    description:
-      "    Career orientation, counseling and services from Lebanon and Gulf for USA, Canada, Europe and More, We provide expert and unbiased assistance in finding the major, the country and the college that match the unique attributes of each specific student.",
-
+    title: "A Community for the Gym Rats of Lebanon",
+    description: "For the dedicated gym rats and fitness enthusiasts.",
     type: "website",
-    url: `${"envUrl"}`,
-    siteName: " UniEdge counseling Inc",
+    url: `${envUrl}`,
+    siteName: " Level Up Beirut ",
     images: [
       {
         url: "/thumbnail.png",
